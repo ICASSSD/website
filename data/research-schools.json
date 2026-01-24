@@ -1,0 +1,124 @@
+[
+    {
+        "id": "school-3",
+        "year": "2025",
+        "title": "Third Research School on Sustainable Solutions",
+        "date": "May - August 2025",
+        "theme": "Dynamic Sustainable Solutions",
+        "description": "The Third Research School continues the tradition of multi-disciplinary inquiry into sustainability. It focuses on viewing sustainability through holistic, integrative, and critical thinking, moving beyond traditional academic silos.",
+        "objectives": [
+            "Co-Author a research paper at the end of the school",
+            "Discuss, debate and research Sustainable Solutions in multi-disciplinary teams",
+            "Learn from researchers, faculty and industry leaders"
+        ],
+        "topics": [
+            "Agroecology and Sustainable Food Systems",
+            "Green Engineering",
+            "Greenhouse Gas Emissions",
+            "Circular Economy and Corporate Sustainability",
+            "Socioeconomic aspects of Sustainable Development",
+            "AI for Sustainability"
+        ],
+        "schedule": [
+            {
+                "date": "Weekends",
+                "event": "Weekly Sessions from 10am-12 Noon EST"
+            }
+        ],
+        "applyLink": "https://docs.google.com/forms/d/e/1FAIpQLSfyDzyId39MCoblbsm_wVC1rK2Mc0bOj8fKt43r5X8GZ_GnEw/viewform",
+        "registrationDeadline": "May 3rd, 2025"
+    },
+    {
+        "id": "school-2",
+        "year": "2024",
+        "title": "Second Research School on Sustainable Solutions",
+        "date": "April - June 2024",
+        "theme": "Dynamic Sustainable Solutions",
+        "description": "Building on the success of the first year, the Second Research School emphasized the 'Dynamic' nature of sustainable solutions, integrating AI and systems thinking into the core curriculum.",
+        "objectives": [
+            "Identify research topics in sustainability",
+            "Prepare and present research proposals",
+            "Develop teamwork and interdisciplinary collaboration skills"
+        ],
+        "topics": [
+            "Agroecology and Sustainable Food Systems",
+            "Green Engineering",
+            "Greenhouse Gas Emissions",
+            "Circular Economy and Corporate Sustainability",
+            "Socioeconomic aspects of Sustainable Development",
+            "AI for Sustainability"
+        ],
+        "schedule": [
+            {
+                "date": "Apr 20, 2024",
+                "event": "Opening Workshop: Panel Discussion"
+            },
+            {
+                "date": "Apr 27, 2024",
+                "event": "Intro to Research & Topic Identification"
+            },
+            {
+                "date": "May 4, 2024",
+                "event": "Research Ethics & Proposal Preparation"
+            },
+            {
+                "date": "May 11, 2024",
+                "event": "Principles of Sustainability & Group Work"
+            },
+            {
+                "date": "May 18, 2024",
+                "event": "Systems Thinking & Progress Presentation"
+            },
+            {
+                "date": "May 25, 2024",
+                "event": "AI for Sustainability & Group Work"
+            },
+            {
+                "date": "Jun 22, 2024",
+                "event": "Final Workshop: Presentation of Final Papers"
+            }
+        ],
+        "applyLink": null,
+        "registrationDeadline": "March 10th, 2024"
+    },
+    {
+        "id": "school-1",
+        "year": "2023",
+        "title": "First Research School on Sustainable Solutions",
+        "date": "February - August 2023",
+        "theme": "Sustainable Solutions",
+        "description": "The inaugural Research School established the foundation for our educational outreach, bringing together students and experts to explore the intersection of technology, consciousness, and sustainability.",
+        "objectives": [
+            "Foster innovation and practical problem-solving",
+            "Connect young researchers with mentors",
+            "Produce actionable research outcomes"
+        ],
+        "topics": [
+            "Agroecology and Sustainable Food Systems",
+            "Green Engineering",
+            "Greenhouse Gas Emissions",
+            "Circular Economy and Corporate Sustainability",
+            "Socioeconomic aspects: poverty/gender/climate change"
+        ],
+        "schedule": [
+            {
+                "date": "Feb 17, 2023",
+                "event": "Opening Workshop"
+            },
+            {
+                "date": "Feb 24, 2023",
+                "event": "Intro to Research Process"
+            },
+            {
+                "date": "Mar 25, 2023",
+                "event": "Research Ethics"
+            },
+            {
+                "date": "Jul 22, 2023",
+                "event": "Systems Thinking & Midterm Presentations"
+            }
+        ],
+        "applyLink": null,
+        "registrationDeadline": "Feb 10th, 2023"
+    }
+]

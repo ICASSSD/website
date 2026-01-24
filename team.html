@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team | ICASSSD</title>
+    <meta name="description"
+        content="Meet the team behind ICASSSD: Our Chief Scientific Advisor, Advisors, and Leads driving sustainable development.">
+
+    <!-- External Styles & Scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="styles/tailwind.config.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body class="font-sans text-gray-800 antialiased bg-gray-50">
+
+    <!-- Navigation -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Header -->
+    <div class="pt-32 pb-10 bg-teal-50/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-dark mb-4">Our Team</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Dedicated experts working together to advance systems science and sustainability.
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <section class="py-12 min-h-screen">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
+
+            <!-- Chief Scientific Advisor (Hardcoded) -->
+            <div>
+                <div class="flex items-center gap-4 mb-8 justify-center md:justify-start">
+                    <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center text-accent">
+                        <i class="fas fa-star text-xl"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-dark">Chief Scientific Advisor</h2>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl shadow-lg p-8 border-t-4 border-accent flex flex-col md:flex-row items-center md:items-start gap-8">
+                    <!-- Placeholder for potential image -->
+                    <div
+                        class="w-32 h-32 bg-gray-100 rounded-full flex items-center justify-center text-gray-400 flex-shrink-0">
+                        <img src="images/team/Satsangi_Sahab.jpg" alt="Revered Prof. Prem Saran Satsangi Sahab"
+                            class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h3 class="text-2xl font-bold text-dark mb-2">Revered Prof. Prem Saran Satsangi Sahab</h3>
+                        <p class="text-lg text-primary font-medium mb-4">
+                            Chairman, <br> Advisory Committee on Education
+                        </p>
+                        <p class="text-gray-600 leading-relaxed max-w-2xl">
+                            Dayalbagh Educational Institutions, Agra, India - 282005
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advisors (Dynamic) -->
+            <div>
+                <div class="flex items-center gap-4 mb-8 justify-center md:justify-start">
+                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                        <i class="fas fa-user-graduate text-xl"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-dark">Advisors</h2>
+                </div>
+                <div id="advisors-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Dynamic Content -->
+                    <div class="col-span-full flex justify-center py-10 text-gray-400">
+                        <i class="fas fa-circle-notch fa-spin text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leads (Dynamic) -->
+            <div>
+                <div class="flex items-center gap-4 mb-8 justify-center md:justify-start">
+                    <div class="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+                        <i class="fas fa-users text-xl"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-dark">Leads</h2>
+                </div>
+                <div id="leads-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Dynamic Content -->
+                    <div class="col-span-full flex justify-center py-10 text-gray-400">
+                        <i class="fas fa-circle-notch fa-spin text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Logic -->
+    <script src="scripts/layout.js"></script>
+    <script src="scripts/team.js"></script>
+</body>
+
+</html>

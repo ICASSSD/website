@@ -1,0 +1,167 @@
+/* Custom Styles */
+.glass-nav {
+    background: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.hero-pattern {
+    background-color: transparent;
+    /* Was #f0fdfa, made transparent to show video */
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23159895' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    /* Increased pattern opacity slightly in SVG for visibility against video if needed, but 0.05 is fine. Kept as is or adjusted if needed. 
+       Actually, let's keep the pattern subtle. */
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #1a5f7a, #159895);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Animations */
+@keyframes blob {
+    0% {
+        transform: translate(0px, 0px) scale(1);
+    }
+
+    33% {
+        transform: translate(30px, -50px) scale(1.1);
+    }
+
+    66% {
+        transform: translate(-20px, 20px) scale(0.9);
+    }
+
+    100% {
+        transform: translate(0px, 0px) scale(1);
+    }
+}
+
+.animate-blob {
+    animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+    animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+    animation-delay: 4s;
+}
+
+/* Parallax Background */
+#parallax-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Behind content */
+    overflow: hidden;
+}
+
+#parallax-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    opacity: 1.0;
+    /* Fully visible */
+}
+
+/* Ensure content sits above */
+section,
+footer {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.4);
+    /* Much more transparent (was 0.75) */
+    backdrop-filter: blur(5px);
+    /* Reduced blur to see video better */
+}
+
+/* Specific adjustment for 'Work' section to maintain card contrast */
+/* Specific adjustment for 'Work' section to maintain card contrast */
+#work,
+#blogs {
+    background-color: rgba(248, 250, 252, 0.75);
+    backdrop-filter: blur(8px);
+}
+
+/* Add transparency to cards in work/events since we removed utility classes */
+#work .rounded-2xl,
+#events .rounded-2xl:not(.group),
+/* Exclude the image cards which are .group */
+#events .bg-slate-50 {
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    backdrop-filter: blur(5px);
+}
+
+nav {
+    z-index: 50;
+    /* Keep nav on top */
+}
+
+/* Hide Scrollbar Utilities */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/* Carousel / Marquee Styles */
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 0.75rem;
+}
+
+.carousel-track {
+    display: flex;
+    white-space: nowrap;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+}
+
+.carousel-slide {
+    width: 300px;
+    height: 200px;
+    flex-shrink: 0;
+    padding-right: 1rem;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-300px * 5));
+        /* scroll by the width of the unique set of images */
+    }
+}
+
+.carousel-container:hover .carousel-track {
+    animation-play-state: paused;
+}

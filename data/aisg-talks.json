@@ -1,0 +1,41 @@
+[
+    {
+        "id": "talk-1",
+        "type": "upcoming",
+        "title": "TBD",
+        "speaker": "Professor Dong Wang",
+        "speakerImage": "https://ischool.illinois.edu/sites/default/files/styles/large_square/public/images/Dong-Wang-23.jpg?itok=hAZyFXyh",
+        "date": "May 15, 2026 | 11:00 AM EST",
+        "summary": "",
+        "abstract": "TBD",
+        "bio": "Dong Wang joined the School of Information Sciences at the University of Illinois as an associate professor in August 2021. He previously served as an associate professor in the Computer Science and Engineering Department at the University of Notre Dame. His honors include the NSF CAREER Award, Google Faculty Research Award, Young Investigator Program (YIP) Award from the US Army Research Office, NSF CRII Award, Wing Kai Cheng Fellowship from the University of Illinois, and the Best Paper Awards of ACM/IEEE International Conference on Advances in Social Networks Analysis and Mining (ASONAM) and IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS). He also served as the TPC chairs of IEEE DCoSS 2022 and ACM/IEEE ASONAM 2023. Wang’s work has been applied in a wide range of real-world applications such as social network analysis, crowdsourcing, disaster response, education,  smart cities, synthetic biology, and environmental sustainability. He has published over 150 technical papers in peer reviewed conferences and journals. His research on social sensing, intelligence and computing resulted in software tools that found applications in academia, industry, and government research labs. He has authored two books, Social Edge Computing: Empowering Human-Centric Edge Computing, Learning and Intelligence (Springer, 2023) and Social Sensing: Building Reliable Systems on Unreliable Data (Elsevier, 2015). Wang holds a PhD in computer science from the University of Illinois Urbana-Champaign.",
+        "videoLink": null,
+        "posterLink": ""
+    },
+    {
+        "id": "talk-2",
+        "type": "past",
+        "title": "Learnings from Developing and Deploying AI Solutions for Social Impact",
+        "speaker": "Professor Makarand Tapaswi",
+        "speakerImage": "https://makarandtapaswi.github.io/assets/img/personal/makarand_udaipur-800.webp",
+        "date": "November 27, 2025 | 9:30 AM EST",
+        "summary": "This talk outlines Wadhwani AI's work in deploying AI solutions for India's underserved communities, specifically highlighting Shishu Maapan (smartphone-based newborn measurement) and Vaachan Samiksha (oral reading fluency assessment).",
+        "abstract": "For the last 7+ years, Wadhwani AI has been involved in the development and deployment of AI solutions to benefit the underserved in India. Our solutions span healthcare, agriculture, and education, and operate across all domains of machine learning such as tabular data, images and videos, audio and speech, and language and conversational agents. In this talk, I will provide a broad overview of our solutions and then focus on a couple. We will look at: (1) Shishu Maapan, our solution for automatic anthropometric measurements of a newborn from a video captured using a low-cost smartphone; and (2) Vaachan Samiksha, our solution to assess oral reading fluency and aid improve foundational literacy across (especially rural and government) schools.",
+        "bio": "Prof. Makarand Tapaswi is a Principal Machine Learning Scientist at Wadhwani AI, a non-profit on using AI for Social Good, and an Assistant Professor at the Computer Vision group at IIIT Hyderabad, India. At Wadhwani AI, he leads the ML aspects of developing and deploying several AI solutions that create social impact in education, health, and agriculture. At IIIT, he works on projects at the intersection of video and language understanding, especially related to analyzing or generating stories. More details here: https://makarandtapaswi.github.io/",
+        "videoLink": "https://www.youtube.com/watch?v=LWNp-BaBj-Q",
+        "posterLink": "../resources/aisg/makarand.pdf"
+    },
+    {
+        "id": "talk-3",
+        "type": "past",
+        "title": "AI for Social Impact: Deployed Resource Optimization and Future Acceleration with Foundation Models",
+        "speaker": "Professor Milind Tambe",
+        "speakerImage": "https://sites.harvard.edu/ux-seas/files/2024/08/img-people-tambe-page.jpg",
+        "date": "May 30, 2025 | 1:00 PM EST",
+        "summary": "",
+        "abstract": "",
+        "bio": "Milind Tambe is Gordon McKay Professor of Computer Science at Harvard University; concurrently, he is also Principal Scientist and Director for “AI for Social Good” at Google Research. Prof. Tambe and his team have developed innovative AI and multi-agent reasoning systems that have been successfully deployed to deliver real-world impact in public health (e.g., maternal and child health), public safety, and wildlife conservation. He is the recipient of the AAAI Award for Artificial Intelligence for the Benefit of Humanity, the AAAI Feigenbaum Prize, the IJCAI John McCarthy Award, the AAAI Robert S. Engelmore Memorial Lecture Award, the AAMAS ACM/SIGAI Autonomous Agents Research Award, and the INFORMS Wagner Prize for excellence in Operations Research practice. He is a fellow of AAAI and ACM. For his work on AI and public safety, he has also received the Military Operations Research Society Rist Prize for best implemented national security operations research study, the Columbus Fellowship Foundation Homeland security award, and commendations and certificates of appreciation from the US Coast Guard, the Federal Air Marshals Service, and airport police at the city of Los Angeles.",
+        "videoLink": "https://www.youtube.com/watch?v=_5gLR0J4Ens",
+        "posterLink": "../resources/aisg/milind.pdf"
+    }
+]

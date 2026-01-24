@@ -1,0 +1,41 @@
+{
+    "advisors": [
+        {
+            "name": "Prof. Peter H. Roe",
+            "role": "Professor Emeritus",
+            "department": "System Design Engineering",
+            "institution": "University of Waterloo",
+            "image": null
+        },
+        {
+            "name": "Prof. K. Ponnambalam",
+            "role": "Professor",
+            "department": "Systems Design Engineering",
+            "institution": "University of Waterloo",
+            "image": "images/team/ponnu.png"
+        },
+        {
+            "name": "Prof. Keith W. Hipel",
+            "role": "Professor Emeritus",
+            "department": "Systems Design Engineering",
+            "institution": "University of Waterloo",
+            "image": "images/team/kwhipel.png"
+        }
+    ],
+    "leads": [
+        {
+            "name": "Mr. Surya Kant Sasan",
+            "role": "Director, Legal Advisor",
+            "department": "",
+            "institution": "",
+            "image": "images/team/suryakant.jpg"
+        },
+        {
+            "name": "Ms. Usha Sharma",
+            "role": "Director, Advancement Lead",
+            "department": "",
+            "institution": "",
+            "image": null
+        }
+    ]
+}
