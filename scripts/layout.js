@@ -54,6 +54,12 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <a href="${basePath}index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-primary">
                                     <i class="fas fa-home w-5"></i> Home
                                 </a>
+                                <a href="${basePath}events/aisg.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-primary">
+                                    <i class="fas fa-robot w-5"></i> AI for Social Good
+                                </a>
+                                <a href="${basePath}events/research-school.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-primary">
+                                    <i class="fas fa-graduation-cap w-5"></i> Research Schools
+                                </a>
                                 <a href="https://forms.gle/D2Ueua9ELjv7ebzN6" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-primary">
                                     <i class="fas fa-user-plus w-5"></i> Member Sign Up
                                 </a>

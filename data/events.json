@@ -34,24 +34,13 @@
     },
     {
         "id": 4,
-        "title": "United Nations Alignment",
-        "date": "Ongoing",
-        "sortDate": "2024-01-01",
-        "category": "Policy",
-        "image": "https://images.unsplash.com/photo-1569974498991-d3c12a504f95?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        "shortDescription": "Our vision aligns with global sustainability goals and UN initiatives.",
-        "longDescription": "<p>ICASSSD is proud to announce its reaffirmed commitment to the United Nations Sustainable Development Goals (SDGs). We are specifically targeting:</p><ul class='list-disc pl-5 mt-2 space-y-1'><li>Goal 4: Quality Education</li><li>Goal 11: Sustainable Cities and Communities</li><li>Goal 13: Climate Action</li></ul>",
-        "pageLink": null
-    },
-    {
-        "id": 5,
-        "title": "Global Systems Conference",
+        "title": "Dynamic Sustainable Solutions Conference",
         "date": "Nov 2024",
         "sortDate": "2024-11-15",
         "category": "Conference",
         "image": "https://images.unsplash.com/photo-1544531320-dd40e3a2e987?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        "shortDescription": "An international gathering of minds to discuss the future of systems science.",
-        "longDescription": "<p>The Annual Global Systems Conference will be held in Toronto this year. We welcome papers and presentations on Systems Theory, Cybernetics, and Complexity Science.</p>",
+        "shortDescription": "An international gathering of minds to discuss sust",
+        "longDescription": "<p>The Dynamic Sustainable Solutions Conference will be held in Waterloo this year. More information will be available soon.</p>",
         "pageLink": null
     }
 ]
