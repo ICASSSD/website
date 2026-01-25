@@ -60,17 +60,20 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <a href="${basePath}events/research-school.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-primary">
                                     <i class="fas fa-graduation-cap w-5"></i> Research Schools
                                 </a>
-                                <a href="https://forms.gle/D2Ueua9ELjv7ebzN6" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-primary">
-                                    <i class="fas fa-user-plus w-5"></i> Member Sign Up
-                                </a>
                                 <a href="${basePath}team.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-primary">
-                                    <i class="fas fa-users w-5"></i> Team
+                                <i class="fas fa-users w-5"></i> Team
                                 </a>
                                 <a href="${basePath}partnership.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-primary">
-                                    <i class="fas fa-handshake w-5"></i> Partnership
+                                <i class="fas fa-handshake w-5"></i> Partnership
                                 </a>
                                 <a href="${basePath}blog.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-primary">
-                                    <i class="fas fa-newspaper w-5"></i> Blog
+                                <i class="fas fa-newspaper w-5"></i> Blog
+                                </a>
+                                <a href="${basePath}publications.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-primary">
+                                    <i class="fas fa-book w-5"></i> All Publications
+                                </a>
+                                <a href="https://forms.gle/D2Ueua9ELjv7ebzN6" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-primary">
+                                    <i class="fas fa-user-plus w-5"></i> Member Sign Up
                                 </a>
                             </div>
                         </div>

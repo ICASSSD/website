@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications | ICASSSD</title>
+    <meta name="description"
+        content="Browse the complete list of research papers, articles, and conference proceedings published by ICASSSD members and collaborators.">
+
+    <!-- External Styles & Scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="styles/tailwind.config.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body class="font-sans text-gray-800 antialiased bg-gray-50">
+
+    <!-- Navigation -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Header -->
+    <div class="pt-32 pb-10 bg-teal-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Research Publications</h1>
+            <p class="text-xl text-teal-100 max-w-2xl mx-auto">
+                Advancing knowledge in systems science and sustainability.
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <section class="py-12 min-h-screen">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Search & Filter -->
+            <div class="mb-12">
+                <div class="relative max-w-xl mx-auto">
+                    <input type="text" id="search-input" placeholder="Search papers, authors, or years..."
+                        class="w-full pl-12 pr-4 py-4 rounded-full border border-gray-200 shadow-sm focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none transition-all">
+                    <i class="fas fa-search absolute left-5 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                </div>
+            </div>
+
+            <!-- Publications Container -->
+            <div id="publications-container" class="space-y-12">
+                <div class="flex justify-center py-20 text-gray-400">
+                    <i class="fas fa-circle-notch fa-spin text-3xl"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Logic -->
+    <script src="scripts/layout.js"></script>
+    <script src="scripts/publications.js"></script>
+</body>
+
+</html>
