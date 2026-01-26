@@ -11,17 +11,6 @@
         "pageLink": "events/research-school.html"
     },
     {
-        "id": 2,
-        "title": "Basant Panchami",
-        "date": "January 2024",
-        "sortDate": "2024-01-26",
-        "category": "Community",
-        "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        "shortDescription": "Celebrations and gatherings in Dayalbagh focusing on community unity and heritage.",
-        "longDescription": "<p>Basant Panchami marks the arrival of spring and is celebrated with great enthusiasm. Our community gathering focuses on the integration of cultural heritage with modern sustainability practices.</p><p>Highlights:</p><ul class='list-disc pl-5 mt-2 space-y-1'><li>Cultural Performances</li><li>Community Feast</li><li>Sustainability Workshops</li></ul>",
-        "pageLink": "blogs/basant-celebrations.html"
-    },
-    {
         "id": 3,
         "title": "AI for Social Good",
         "date": "March 15, 2024",
