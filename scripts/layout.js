@@ -26,6 +26,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const footerPlaceholder = document.getElementById('footer-placeholder');
 
     if (navbarPlaceholder) {
+        // Active Tab Logic
+        const currentPath = window.location.pathname;
+
+        // Indicator Style
+        const getIndicatorClass = (path) => {
+            const base = "font-medium transition-colors border-b-2 pb-1";
+            const activeClass = "text-primary border-primary";
+            const inactiveClass = "text-gray-600 hover:text-primary border-transparent hover:border-gray-200";
+
+            if (path === 'home' && (currentPath.endsWith('index.html') || currentPath === '/' || currentPath.endsWith('/'))) return `${activeClass} ${base}`;
+            if (path === 'events' && currentPath.includes('events')) return `${activeClass} ${base}`;
+            if (path === 'team' && currentPath.includes('team.html')) return `${activeClass} ${base}`;
+            if (path === 'partnership' && currentPath.includes('partnership.html')) return `${activeClass} ${base}`;
+            if (path === 'blog' && currentPath.includes('blog.html')) return `${activeClass} ${base}`;
+            if (path === 'publications' && currentPath.includes('publications.html')) return `${activeClass} ${base}`;
+
+            return `${inactiveClass} ${base}`;
+        };
+
         navbarPlaceholder.innerHTML = `
         <nav class="fixed w-full z-50 glass-nav transition-all duration-300" id="navbar">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -37,40 +56,31 @@ document.addEventListener('DOMContentLoaded', () => {
                             <span>ICASSSD</span>
                         </a>
                     </div>
-                    <div class="hidden md:flex space-x-8 items-center">
-                        <a href="${basePath}index.html#home" class="text-gray-600 hover:text-primary font-medium transition-colors">Home</a>
-                        <a href="${basePath}index.html#about" class="text-gray-600 hover:text-primary font-medium transition-colors">About Us</a>
-                        <a href="${basePath}index.html#work" class="text-gray-600 hover:text-primary font-medium transition-colors">Our Work</a>
-                        <a href="${basePath}index.html#events" class="text-gray-600 hover:text-primary font-medium transition-colors">Events</a>
-                        <a href="${basePath}index.html#contact" class="text-gray-600 hover:text-primary font-medium transition-colors">Contact</a>
+                    <div class="hidden md:flex space-x-6 lg:space-x-8 items-center">
+                        <a href="${basePath}index.html" class="${getIndicatorClass('home')}">Home</a>
+                        <a href="${basePath}events.html" class="${getIndicatorClass('events')}">Events</a>
+                        <a href="${basePath}team.html" class="${getIndicatorClass('team')}">Team</a>
+                        <a href="${basePath}partnership.html" class="${getIndicatorClass('partnership')}">Partnership</a>
+                        <a href="${basePath}blog.html" class="${getIndicatorClass('blog')}">Blog</a>
+                        <a href="${basePath}publications.html" class="${getIndicatorClass('publications')}">Publications</a>
                         
-                        <!-- More Options Dropdown -->
+                        <!-- Options Dropdown -->
                         <div class="relative ml-2 group">
                             <button id="more-options-btn" class="text-gray-600 hover:text-primary focus:outline-none p-2 rounded-full hover:bg-gray-100 transition-colors">
-                                <i class="fas fa-ellipsis-v text-lg"></i>
+                                <i class="fas fa-bars text-lg"></i>
                             </button>
                             <!-- Dropdown Menu -->
-                            <div id="more-options-menu" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50 transform origin-top-right transition-all">
-                                <a href="${basePath}index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-primary">
-                                    <i class="fas fa-home w-5"></i> Home
-                                </a>
+                            <div id="more-options-menu" class="hidden absolute right-0 mt-2 w-56 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50 transform origin-top-right transition-all">
+                                <div class="px-4 py-2 text-xs font-semibold text-gray-400 uppercase tracking-wider">Events</div>
                                 <a href="${basePath}events/aisg.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-primary">
-                                    <i class="fas fa-robot w-5"></i> AI for Social Good
+                                    <i class="fas fa-robot w-5 mr-1"></i> AI for Social Good
                                 </a>
                                 <a href="${basePath}events/research-school.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-primary">
-                                    <i class="fas fa-graduation-cap w-5"></i> Research Schools
+                                    <i class="fas fa-graduation-cap w-5 mr-1"></i> Research Schools
                                 </a>
-                                <a href="${basePath}team.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-primary">
-                                <i class="fas fa-users w-5"></i> Team
-                                </a>
-                                <a href="${basePath}partnership.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-primary">
-                                <i class="fas fa-handshake w-5"></i> Partnership
-                                </a>
-                                <a href="${basePath}blog.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-primary">
-                                <i class="fas fa-newspaper w-5"></i> Blog
-                                </a>
-                                <a href="${basePath}publications.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-primary">
-                                    <i class="fas fa-book w-5"></i> All Publications
+                                <div class="border-t border-gray-100 my-1"></div>
+                                <a href="${basePath}about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-primary">
+                                    <i class="fas fa-info-circle w-5"></i> About Us
                                 </a>
                                 <a href="https://forms.gle/D2Ueua9ELjv7ebzN6" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-primary">
                                     <i class="fas fa-user-plus w-5"></i> Member Sign Up
@@ -87,17 +97,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
             <!-- Mobile Menu (Hidden by default) -->
-            <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md absolute w-full left-0 top-20 border-b border-gray-100 shadow-lg">
+            <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md absolute w-full left-0 top-20 border-b border-gray-100 shadow-lg max-h-[80vh] overflow-y-auto">
                 <div class="px-4 pt-2 pb-4 space-y-2">
-                    <a href="${basePath}index.html#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-teal-50">Home</a>
-                    <a href="${basePath}index.html#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-teal-50">About Us</a>
-                    <a href="${basePath}index.html#work" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-teal-50">Our Work</a>
-                    <a href="${basePath}index.html#events" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-teal-50">Events</a>
-                    <a href="${basePath}index.html#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-teal-50">Contact</a>
-                    <div class="border-t border-gray-100 my-2"></div>
+                    <a href="${basePath}index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-teal-50">Home</a>
+                    <a href="${basePath}events.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-teal-50">All Events</a>
                     <a href="${basePath}team.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-teal-50">Team</a>
                     <a href="${basePath}partnership.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-teal-50">Partnership</a>
                     <a href="${basePath}blog.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-teal-50">Blog</a>
+                    <a href="${basePath}publications.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-teal-50">Publications</a>
+                    
+                    <div class="border-t border-gray-100 my-1"></div>
+                    <div class="px-3 py-1 text-xs font-semibold text-gray-400 uppercase tracking-wider">More Events</div>
+                    <a href="${basePath}events/aisg.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-teal-50 pl-6">AI for Social Good</a>
+                    <a href="${basePath}events/research-school.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-teal-50 pl-6">Research Schools</a>
+                    
+                    <div class="border-t border-gray-100 my-1"></div>
+                    <a href="${basePath}about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-teal-50">About Us</a>
                     <a href="https://forms.gle/D2Ueua9ELjv7ebzN6" target="_blank" class="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-teal-50 font-bold">Member Sign Up</a>
                 </div>
             </div>
