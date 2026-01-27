@@ -33,8 +33,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <h3 class="text-xl font-bold text-dark mb-2">${member.name}</h3>
                 <p class="text-primary font-medium text-sm mb-1">${member.role}</p>
-                ${member.department ? `<p class="text-gray-500 text-xs">${member.department}</p>` : ''}
-                ${member.institution ? `<p class="text-gray-500 text-xs">${member.institution}</p>` : ''}
+                ${member.affiliations && member.affiliations.length > 0 ? `
+                    <p class="text-gray-500 text-xs mt-2 font-medium">${member.affiliations[0].jobTitle || ''}</p>
+                    <p class="text-gray-500 text-xs">${member.affiliations[0].department ? member.affiliations[0].department + ',' : ''} ${member.affiliations[0].institution}</p>
+                ` : ''}
             </div>
         `).join('');
 
@@ -56,18 +58,23 @@ document.addEventListener('DOMContentLoaded', () => {
         modalBio.textContent = member.bio || 'Biography not available.';
 
         // Handle Dept/Inst Tags (Hide if empty)
-        if (member.department) {
-            modalDept.textContent = member.department;
-            modalDept.classList.remove('hidden');
-        } else {
-            modalDept.classList.add('hidden');
-        }
+        // Dept is now part of affiliations, so hide the separate dept tag
+        modalDept.classList.add('hidden');
 
-        if (member.institution) {
-            modalInst.textContent = member.institution;
+        if (member.affiliations && member.affiliations.length > 0) {
+            modalInst.innerHTML = member.affiliations.map(aff => `
+                <div class="mb-3 text-left border-l-2 border-indigo-100 pl-3">
+                    <div class="font-bold text-gray-800 text-sm">${aff.jobTitle}</div>
+                    <div class="text-xs text-gray-600">
+                        ${aff.department ? `<span class="font-medium">${aff.department}</span>, ` : ''}
+                        <span>${aff.institution}</span>
+                    </div>
+                </div>
+            `).join('');
             modalInst.classList.remove('hidden');
         } else {
             modalInst.classList.add('hidden');
+            modalInst.innerHTML = '';
         }
 
         if (member.image) {
