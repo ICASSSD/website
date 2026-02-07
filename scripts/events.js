@@ -16,7 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(data => {
             // Sort events by sortDate descending (newest first)
-            const sortedEvents = data.sort((a, b) => new Date(b.sortDate) - new Date(a.sortDate));
+            const sortedEvents = data
+                .filter(event => event.publish !== false) // Default to true if missing
+                .sort((a, b) => new Date(b.sortDate) - new Date(a.sortDate));
             renderEvents(sortedEvents);
         })
         .catch(error => console.error('Error loading events:', error));

@@ -3,12 +3,16 @@
         "id": "talk-1",
         "type": "upcoming",
         "title": "TBD",
-        "speaker": "Professor Dong Wang",
-        "speakerImage": "https://ischool.illinois.edu/sites/default/files/styles/large_square/public/images/Dong-Wang-23.jpg?itok=hAZyFXyh",
+        "speakers": [
+            {
+                "name": "Professor Dong Wang",
+                "image": "https://ischool.illinois.edu/sites/default/files/styles/large_square/public/images/Dong-Wang-23.jpg?itok=hAZyFXyh"
+            }
+        ],
         "date": "May 15, 2026 | 11:00 AM EST",
         "summary": "",
         "abstract": "TBD",
-        "bio": "Dong Wang joined the School of Information Sciences at the University of Illinois as an associate professor in August 2021. He previously served as an associate professor in the Computer Science and Engineering Department at the University of Notre Dame. His honors include the NSF CAREER Award, Google Faculty Research Award, Young Investigator Program (YIP) Award from the US Army Research Office, NSF CRII Award, Wing Kai Cheng Fellowship from the University of Illinois, and the Best Paper Awards of ACM/IEEE International Conference on Advances in Social Networks Analysis and Mining (ASONAM) and IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS). He also served as the TPC chairs of IEEE DCoSS 2022 and ACM/IEEE ASONAM 2023. Wang’s work has been applied in a wide range of real-world applications such as social network analysis, crowdsourcing, disaster response, education,  smart cities, synthetic biology, and environmental sustainability. He has published over 150 technical papers in peer reviewed conferences and journals. His research on social sensing, intelligence and computing resulted in software tools that found applications in academia, industry, and government research labs. He has authored two books, Social Edge Computing: Empowering Human-Centric Edge Computing, Learning and Intelligence (Springer, 2023) and Social Sensing: Building Reliable Systems on Unreliable Data (Elsevier, 2015). Wang holds a PhD in computer science from the University of Illinois Urbana-Champaign.",
+        "bio": "Dong Wang joined the School of Information Sciences at the University of Illinois as an associate professor in August 2021. He previously served as an associate professor in the Computer Science and Engineering Department at the University of Notre Dame. His honors include the NSF CAREER Award, Google Faculty Research Award, Young Investigator Program (YIP) Award from the US Army Research Office, NSF CRII Award, Wing Kai Cheng Fellowship from the University of Illinois, and the Best Paper Awards of ACM/IEEE International Conference on Advances in Social Networks Analysis and Mining (ASONAM) and IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS). He also served as the TPC chairs of IEEE DCoSS 2022 and ACM/IEEE ASONAM 2023. Wang's work has been applied in a wide range of real-world applications such as social network analysis, crowdsourcing, disaster response, education,  smart cities, synthetic biology, and environmental sustainability. He has published over 150 technical papers in peer reviewed conferences and journals. His research on social sensing, intelligence and computing resulted in software tools that found applications in academia, industry, and government research labs. He has authored two books, Social Edge Computing: Empowering Human-Centric Edge Computing, Learning and Intelligence (Springer, 2023) and Social Sensing: Building Reliable Systems on Unreliable Data (Elsevier, 2015). Wang holds a PhD in computer science from the University of Illinois Urbana-Champaign.",
         "videoLink": null,
         "posterLink": ""
     },
@@ -16,8 +20,12 @@
         "id": "talk-2",
         "type": "past",
         "title": "Learnings from Developing and Deploying AI Solutions for Social Impact",
-        "speaker": "Professor Makarand Tapaswi",
-        "speakerImage": "https://makarandtapaswi.github.io/assets/img/personal/makarand_udaipur-800.webp",
+        "speakers": [
+            {
+                "name": "Professor Makarand Tapaswi",
+                "image": "https://makarandtapaswi.github.io/assets/img/personal/makarand_udaipur-800.webp"
+            }
+        ],
         "date": "November 27, 2025 | 9:30 AM EST",
         "summary": "This talk outlines Wadhwani AI's work in deploying AI solutions for India's underserved communities, specifically highlighting Shishu Maapan (smartphone-based newborn measurement) and Vaachan Samiksha (oral reading fluency assessment).",
         "abstract": "For the last 7+ years, Wadhwani AI has been involved in the development and deployment of AI solutions to benefit the underserved in India. Our solutions span healthcare, agriculture, and education, and operate across all domains of machine learning such as tabular data, images and videos, audio and speech, and language and conversational agents. In this talk, I will provide a broad overview of our solutions and then focus on a couple. We will look at: (1) Shishu Maapan, our solution for automatic anthropometric measurements of a newborn from a video captured using a low-cost smartphone; and (2) Vaachan Samiksha, our solution to assess oral reading fluency and aid improve foundational literacy across (especially rural and government) schools.",
@@ -29,13 +37,77 @@
         "id": "talk-3",
         "type": "past",
         "title": "AI for Social Impact: Deployed Resource Optimization and Future Acceleration with Foundation Models",
-        "speaker": "Professor Milind Tambe",
-        "speakerImage": "https://sites.harvard.edu/ux-seas/files/2024/08/img-people-tambe-page.jpg",
+        "speakers": [
+            {
+                "name": "Professor Milind Tambe",
+                "image": "https://sites.harvard.edu/ux-seas/files/2024/08/img-people-tambe-page.jpg"
+            }
+        ],
         "date": "May 30, 2025 | 1:00 PM EST",
         "summary": "",
         "abstract": "For nearly two decades, my team’s work on AI for Social Impact (AI4SI) has focused on optimizing limited resources in critical areas like public health, conservation, and public safety. I will highlight field test results from our deployed work in India, demonstrating measurable improvements in effectiveness for the world's two largest mobile health programs for maternal and child care, which have served millions of beneficiaries. We have leveraged innovative restless and collaborative bandit algorithms to achieve these gains, revealing new technical directions in the process. Additionally, I will touch upon our previous work on influence maximization for HIV prevention among youth experiencing homelessness in Los Angeles. Deploying end-to-end AI4SI systems requires us to repeat three essential steps: understanding stakeholders’ resource allocation challenges, building a tailored model, and rigorously testing in the field. I'll share initial results on how we can leverage foundation models and LLMs to accelerate this AI4SI process, potentially revolutionizing the speed and scale of social impact applications that focus on resource optimization.",
         "bio": "Milind Tambe is Gordon McKay Professor of Computer Science at Harvard University; concurrently, he is also Principal Scientist and Director for “AI for Social Good” at Google Research. Prof. Tambe and his team have developed innovative AI and multi-agent reasoning systems that have been successfully deployed to deliver real-world impact in public health (e.g., maternal and child health), public safety, and wildlife conservation. He is the recipient of the AAAI Award for Artificial Intelligence for the Benefit of Humanity, the AAAI Feigenbaum Prize, the IJCAI John McCarthy Award, the AAAI Robert S. Engelmore Memorial Lecture Award, the AAMAS ACM/SIGAI Autonomous Agents Research Award, and the INFORMS Wagner Prize for excellence in Operations Research practice. He is a fellow of AAAI and ACM. For his work on AI and public safety, he has also received the Military Operations Research Society Rist Prize for best implemented national security operations research study, the Columbus Fellowship Foundation Homeland security award, and commendations and certificates of appreciation from the US Coast Guard, the Federal Air Marshals Service, and airport police at the city of Los Angeles.",
         "videoLink": "https://www.youtube.com/watch?v=_5gLR0J4Ens",
         "posterLink": "../resources/aisg/milind.pdf"
+    },
+    {
+        "id": "talk-4",
+        "type": "past",
+        "title": "AI for Social Good: Transforming Challenges into Opportunities",
+        "speakers": [
+            {
+                "name": "Preetika Ghai",
+                "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                "bio": "Senior Director of Manufacturing at Rich Products Corporation. Preetika has over 20 years of leadership experience in supply chain and is deeply committed to learning, problem-solving, and empowering associates."
+            },
+            {
+                "name": "Prasad Satyavolu",
+                "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                "bio": "A distinguished speaker from the LearningPlanet Festival with expertise in AI and social transformation."
+            },
+            {
+                "name": "Jon Aikman",
+                "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                "bio": "A distinguished speaker from the LearningPlanet Festival with expertise in AI governance and ethics."
+            }
+        ],
+        "date": "January 18, 2025 | 11:00 AM EST",
+        "summary": "Join us for an insightful workshop on AI for Social Good, where we explore the transformative potential of artificial intelligence in addressing some of society's most pressing challenges.",
+        "abstract": "The event will feature a keynote address by a distinguished speaker, renowned for their pioneering work in leveraging AI for societal impact. They will share valuable insights on how only AI can be harnessed to drive positive social change.",
+        "bio": "Distinguished speakers from the LearningPlanet Festival, including Preetika Ghai, Prasad Satyavolu, and Jon Aikman, bringing expertise in AI and social transformation.",
+        "videoLink": null,
+        "posterLink": "https://www.learning-planet.org/event/ai-for-social-good-transforming-challenges-into-opportunities/"
+    },
+    {
+        "id": "talk-5",
+        "type": "past",
+        "title": "Future Forward: Skills for Thriving in the Age of AI and Uncertainty",
+        "speakers": [
+            {
+                "name": "Prof. Sanjeev Swami",
+                "image": "https://www.learning-planet.org/wp-content/uploads/sanjeev.jpg",
+                "bio": "Prof. Sanjeev Swami is a distinguished management academic and researcher, currently serving as Professor and Regsitrar at Dayalbagh Educational Institute (DEI), Agra, India. He holds a Ph.D. in Business Administration from the University of British Columbia (Canada), an M.Tech. in Industrial & Management Engineering from IIT Kanpur, and a B.E. in Production & Industrial Engineering from Allahabad. Prof. Swami has held faculty roles at prestigious institutions including IIT Kanpur, and has been a visiting professor at Rotterdam School of Management, IIM Bangalore, and IIM Udaipur. He has consulted for international organizations and contributed to national committees on management education quality."
+            },
+            {
+                "name": "Prof. Vijaya Marisetty",
+                "image": "https://www.learning-planet.org/wp-content/uploads/vbm-1.jpg",
+                "bio": "Professor Vijaya Bhaskar Marisetty is the Dr. B. R. Ambedkar Chair Professor at the Indian Institute of Management Visakhapatnam (IIMV), where he also serves as Dean (Academics). He has a Ph.D. from Monash University (Australia), along with post-doctoral experience at Wharton School (University of Pennsylvania) and the Indian School of Business. Before joining IIMV, he was a faculty member at the University of Hyderabad, IIM Bangalore, RMIT University, and Monash University. His research focuses on fintech, financial inclusion, emerging markets corporate finance, and the innovative use of technology to to empower underserved populations. He has published extensively in top-ranked journals."
+            },
+            {
+                "name": "Pramod Allamraju",
+                "image": "https://www.learning-planet.org/wp-content/uploads/pa.jpg",
+                "bio": "Pramod Allamraju is a Digital Experience and Transformation Leader with over two decades of global experience shaping future-state product visions and driving large-scale digital and AI-enabled transformation. His expertise lies in uniting business strategy, design, data, and technology into cohesive experience-led roadmaps that guide enterprise modernization. Pramod has led major transformation programs across North America, Europe, and APAC, influencing multi-year initiatives in healthcare, telecom, insurance, retail, and the public sector. He is known for executive storytelling, solution leadership, and the ability to redefine customer, agent, and practitioner experiences through strategic design."
+            },
+            {
+                "name": "Dr. Pooja Sahni",
+                "image": "https://www.learning-planet.org/wp-content/uploads/WhatsApp-Image-2025-12-01-at-22.02.48.jpg",
+                "bio": "Dr. Pooja Swami Sahni is a Principal Research Scientist at the Mind Lab, IIT Delhi, and an advisor to the Rekhi Foundation, USA. Her work bridges environmental neuroscience, contemplative and ecological education, and youth wellbeing, with a focus on how nature-based and contemplative practices shape cognition, empathy, and social-emotional development. She has previously served as Visiting Professor at Delhi Technological University and held leadership roles at Quditbrain as Chief Technology Officer. A Varela Grantee of the Mind & Life Institute, she has led funded research projects supported by international universities and organizations."
+            }
+        ],
+        "date": "January 17, 2026 | 10:00 AM EST",
+        "summary": "How do we prepare for a world where AI reshapes how we learn, work, and solve problems?",
+        "abstract": "How do we prepare for a world where AI reshapes how we learn, work, and solve problems? What skills will help us stay adaptable, creative, and resilient as uncertainty becomes the norm? And how can we build learning communities capable of meeting the complex challenges ahead? ICASSSD invites you to explore these questions and more.",
+        "videoLink": null,
+        "posterLink": "https://www.learning-planet.org/event/future-forward-skills-for-thriving-in-the-age-of-ai-and-uncertainty/"
     }
 ]

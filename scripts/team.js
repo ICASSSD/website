@@ -17,8 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('data/team.json')
         .then(response => response.json())
         .then(data => {
+            const studentsContainer = document.getElementById('students-container');
+
             renderMembers(data.advisors, advisorsContainer);
             renderMembers(data.leads, leadsContainer);
+            renderMembers(data.affiliates, studentsContainer);
         })
         .catch(error => console.error('Error loading team data:', error));
 

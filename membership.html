@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Member Sign Up | ICASSSD</title>
+    <meta name="description"
+        content="Join ICASSSD as a member. Student, Associate, and Professional memberships available.">
+
+    <!-- External Styles & Scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./styles/tailwind.config.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body class="font-sans text-gray-800 antialiased bg-gray-50">
+
+    <!-- Navigation -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Main Content -->
+    <section class="pt-32 pb-20">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Header -->
+
+
+            <!-- Form Card -->
+            <div class="bg-white p-8 md:p-10 rounded-2xl shadow-lg border border-gray-100">
+
+                <!-- Header (Moved inside for visibility) -->
+                <div class="text-center mb-8">
+                    <h1 class="text-3xl md:text-4xl font-bold text-dark mb-4">Member Sign Up</h1>
+                    <p class="text-lg text-gray-600 mb-4">Welcome to the International Centre for Applied Systems
+                        Science for Sustainable Development (ICASSSD). Join our global community committed to advancing
+                        sustainable solutions through research, collaboration, and innovation.</p>
+                    <p class="text-sm font-medium text-primary bg-primary/5 inline-block px-4 py-2 rounded-full">Choose
+                        from our three tailored membership types below.</p>
+                </div>
+
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                    onload="if(submitted) {window.location='#success'; showSuccess();}"></iframe>
+                <form id="membershipForm" class="space-y-6"
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdlYYoUP5zLSBitdeUJoWRful-VhsU5HFER6cA0OCFG6xvYEQ/formResponse"
+                    method="POST" target="hidden_iframe" onsubmit="submitted=true">
+
+                    <!-- Name -->
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name <span
+                                class="text-red-500">*</span></label>
+                        <input type="text" id="name" name="entry.379987322" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
+                            placeholder="Dr. Jane Doe">
+                    </div>
+
+                    <!-- Email -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address <span
+                                class="text-red-500">*</span></label>
+                        <input type="email" id="email" name="entry.1875700060" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
+                            placeholder="jane@example.com">
+                    </div>
+
+                    <!-- Affiliation -->
+                    <div>
+                        <label for="affiliation" class="block text-sm font-medium text-gray-700 mb-1">Affiliation(s)
+                            <span class="text-red-500">*</span></label>
+                        <p class="text-xs text-gray-500 mt-1">If multiple affiliations - use comma separated names</p>
+                        <input type="text" id="affiliation" name="entry.2007678890" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
+                            placeholder="University of Waterloo, Company Inc.">
+                    </div>
+
+                    <!-- Alumni Check -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Are you an alumni of Dayalbagh
+                            Educational Institute? <span class="text-red-500">*</span></label>
+                        <div class="flex gap-6">
+                            <label class="inline-flex items-center cursor-pointer">
+                                <input type="radio" name="entry.293488326" value="Yes" required
+                                    class="form-radio text-primary w-5 h-5">
+                                <span class="ml-2">Yes</span>
+                            </label>
+                            <label class="inline-flex items-center cursor-pointer">
+                                <input type="radio" name="entry.293488326" value="No" required
+                                    class="form-radio text-primary w-5 h-5">
+                                <span class="ml-2">No</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Country -->
+                    <div>
+                        <label for="country" class="block text-sm font-medium text-gray-700 mb-1">Country of Residence
+                            <span class="text-red-500">*</span></label>
+                        <input type="text" id="country" name="entry.1015205055" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
+                            placeholder="Canada">
+                    </div>
+
+                    <!-- Phone -->
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number <span
+                                class="text-red-500">*</span></label>
+                        <p class="text-xs text-gray-500 mt-1">with country code</p>
+                        <input type="tel" id="phone" name="entry.1617348205" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
+                            placeholder="+1 (555) 123-4567">
+                    </div>
+
+                    <!-- Membership Type -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Membership Type <span
+                                class="text-red-500">*</span></label>
+                        <div class="space-y-3">
+                            <!-- Student -->
+                            <label
+                                class="flex items-start cursor-pointer p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+                                <input type="radio" name="entry.848452812" value="Student" required
+                                    class="form-radio text-primary w-5 h-5 mt-1">
+                                <div class="ml-3">
+                                    <span class="block font-bold text-gray-900">1. Student Membership</span>
+                                    <p class="text-sm text-gray-600 mt-1">Designed for undergraduate and graduate
+                                        students passionate about sustainable science and development. Gain access to
+                                        resources, mentorship, and events to support your academic and professional
+                                        growth.</p>
+                                    <p class="text-xs text-indigo-600 font-semibold mt-1">Eligibility: Active students
+                                        enrolled in recognized educational institutions.</p>
+                                </div>
+                            </label>
+                            <!-- Associate -->
+                            <label
+                                class="flex items-start cursor-pointer p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+                                <input type="radio" name="entry.848452812" value="Associate" required
+                                    class="form-radio text-primary w-5 h-5 mt-1">
+                                <div class="ml-3">
+                                    <span class="block font-bold text-gray-900">2. Associate Membership</span>
+                                    <p class="text-sm text-gray-600 mt-1">Ideal for academics, researchers, and
+                                        non-professionals interested in sustainability. Access expert networks, research
+                                        publications, and ICASSSD workshops.</p>
+                                    <p class="text-xs text-indigo-600 font-semibold mt-1">Eligibility: Individuals
+                                        engaged in academic or personal pursuits related to sustainable development.</p>
+                                </div>
+                            </label>
+                            <!-- Professional -->
+                            <label
+                                class="flex items-start cursor-pointer p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+                                <input type="radio" name="entry.848452812" value="Professional" required
+                                    class="form-radio text-primary w-5 h-5 mt-1">
+                                <div class="ml-3">
+                                    <span class="block font-bold text-gray-900">3. Professional Membership</span>
+                                    <p class="text-sm text-gray-600 mt-1">Tailored for industry professionals working in
+                                        sustainability-related fields. Offers exclusive networking opportunities,
+                                        leadership roles in ICASSSD projects, and a platform to showcase expertise.</p>
+                                    <p class="text-xs text-indigo-600 font-semibold mt-1">Eligibility: Individuals with
+                                        relevant qualifications or experience in industry sectors related to sustainable
+                                        science and development.</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Profile Link -->
+                    <div>
+                        <label for="profileLink" class="block text-sm font-medium text-gray-700 mb-1">Profile Link
+                            (LinkedIn/Website) <span class="text-red-500">*</span></label>
+                        <p class="text-xs text-gray-500 mt-1">Link where we can find your profile, e.g. LinkedIn,
+                            personal website, google scholar etc.</p>
+                        <input type="url" id="profileLink" name="entry.588927693" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
+                            placeholder="https://linkedin.com/in/yourprofile">
+                    </div>
+
+                    <!-- CV Link -->
+                    <div>
+                        <label for="cvLink" class="block text-sm font-medium text-gray-700 mb-1">Resume/CV Link (Google
+                            Drive/Dropbox) <span class="text-red-500">*</span></label>
+                        <p class="text-xs text-gray-500 mt-1">Please ensure the link is accessible (e.g., "Anyone with
+                            the link can view").</p>
+                        <input type="url" id="cvLink" name="entry.113074706" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
+                            placeholder="https://drive.google.com/file/d/...">
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="pt-4">
+                        <button type="submit" id="submitBtn"
+                            class="w-full bg-primary text-white font-bold py-4 rounded-lg shadow-lg hover:bg-indigo-700 transform hover:-translate-y-0.5 transition-all duration-200 flex justify-center items-center gap-2">
+                            <span>Submit Application</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Success Message (Hidden by default) -->
+                <div id="successMessage" class="hidden text-center py-10">
+                    <div
+                        class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 text-green-600">
+                        <i class="fas fa-check text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Application Submitted!</h3>
+                    <p class="text-gray-600 mb-6">Thank you for applying for ICASSSD membership. We will review your
+                        application and get back to you soon.</p>
+                    <a href="index.html"
+                        class="inline-block px-6 py-2 bg-gray-100 text-gray-700 font-medium rounded-lg hover:bg-gray-200 transition-colors">
+                        Return to Home
+                    </a>
+                </div>
+
+                <!-- Error/Timeout Message (Hidden by default) -->
+                <div id="errorMessage" class="hidden text-center py-10">
+                    <div
+                        class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4 text-red-600">
+                        <i class="fas fa-exclamation-triangle text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">We couldn't confirm your submission.</h3>
+                    <p class="text-gray-600 mb-6 max-w-md mx-auto">This could be due to a network issue or a browser
+                        restriction. Don't worry, you can still sign up using the official form.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button onclick="window.location.reload()"
+                            class="px-6 py-2 bg-gray-100 text-gray-700 font-medium rounded-lg hover:bg-gray-200 transition-colors">
+                            Try Again
+                        </button>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdlYYoUP5zLSBitdeUJoWRful-VhsU5HFER6cA0OCFG6xvYEQ/viewform"
+                            target="_blank"
+                            class="px-6 py-2 bg-primary text-white font-medium rounded-lg hover:bg-indigo-700 transition-colors">
+                            Open Google Form <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Background Image -->
+    <div class="fixed inset-0 z-[-1]">
+        <img src="images/membership_bg.png" class="w-full h-full object-cover opacity-100" alt="Background">
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts/layout.js"></script>
+    <script>
+        // Form Submission Logic (Iframe Target)
+        var submitted = false;
+        var submitTimeout;
+
+        function showSuccess() {
+            if (submitTimeout) clearTimeout(submitTimeout);
+
+            const form = document.getElementById('membershipForm');
+            const successMessage = document.getElementById('successMessage');
+            const errorMessage = document.getElementById('errorMessage');
+
+            errorMessage.classList.add('hidden');
+            form.classList.add('hidden');
+            successMessage.classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function showError() {
+            const form = document.getElementById('membershipForm');
+            const successMessage = document.getElementById('successMessage');
+            const errorMessage = document.getElementById('errorMessage');
+
+            successMessage.classList.add('hidden');
+            form.classList.add('hidden');
+            errorMessage.classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        const form = document.getElementById('membershipForm');
+        form.addEventListener('submit', function () {
+            submitted = true;
+            const submitBtn = document.getElementById('submitBtn');
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-circle-notch fa-spin"></i> Submitting...';
+
+            // Set 10-second timeout for fallback
+            submitTimeout = setTimeout(function () {
+                if (!window.location.hash.includes('success')) {
+                    showError();
+                }
+            }, 10000);
+        });
+    </script>
+</body>
+
+</html>

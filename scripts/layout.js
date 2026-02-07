@@ -82,10 +82,9 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <a href="${basePath}about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-primary">
                                     <i class="fas fa-info-circle w-5"></i> About Us
                                 </a>
-                                <a href="https://forms.gle/D2Ueua9ELjv7ebzN6" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-primary">
+                                <a href="${basePath}membership.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-primary">
                                     <i class="fas fa-user-plus w-5"></i> Member Sign Up
                                 </a>
-                            </div>
                         </div>
                     </div>
                     <!-- Mobile menu button -->
@@ -178,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <li><a href="${basePath}team.html" class="hover:text-white transition-colors">Team</a></li>
                             <li><a href="${basePath}partnership.html" class="hover:text-white transition-colors">Partnership</a></li>
                             <li><a href="${basePath}blog.html" class="hover:text-white transition-colors">Blog</a></li>
-                            <li><a href="https://forms.gle/D2Ueua9ELjv7ebzN6" target="_blank" class="hover:text-white transition-colors">Member Sign Up</a></li>
+                            <li><a href="${basePath}membership.html" class="hover:text-white transition-colors">Member Sign Up</a></li>
                         </ul>
                     </div>
 
